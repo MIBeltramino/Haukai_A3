@@ -1,0 +1,2802 @@
+/* Colour Palette */
+/*
+Black: #080808
+Gold: #AF9329
+Lighter green: #518654
+Darker green: #3F581F
+*/
+
+/* Global Styles */
+html{
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    opacity: 70%;
+}
+
+h1{
+    font: 700 2em  Questrial, sans-serif;
+}
+
+h2{
+    font: small-caps 400 2em sans-serif;
+}
+
+h3{
+    font: small-caps 400 1.5em sans-serif;
+}
+
+p{
+    font: 1em Questrial, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+figcaption{
+    font: 0.8em Questrial, sans-serif;
+}
+
+/* Home page layout */
+.main-img-home{
+    grid-area: 2 / 1 / 3 / 6;
+    display: flex;
+    overflow: hidden;
+}
+.welcome-block{
+    grid-area: 3 / 1 / 4 / 6;
+    color: #080808;
+    background-color: #3F581F;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 399px){
+    body{
+        margin: 0;
+    }
+
+    .main-container-home{
+        display: grid;
+        grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+        grid-template-rows: 0.1fr 0.4fr 0.2fr 0.4fr 0.1fr 0.1fr 0.3fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        margin: auto;
+    }
+
+    /* Haukai Intro */
+    .welcome-message{
+        width: 80%;
+        font: 1.2em  Questrial, sans-serif;
+        padding: 7vh 0 5vh 0;
+        margin: auto;
+    }
+
+    .banner-img{
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 110%;
+        transform: scale(1.5, 1.5);
+        margin: 0;
+    }
+
+    /* Menu Intro */
+    .menu-intro{
+        grid-area: 4 / 1 / 5 / 6;
+        width: 100%;
+        background-color: #AF9329;
+        display: inline-flex;
+    }
+
+    .menu-intro-heading{
+        color: #080808;
+        padding-left: 5vw;
+    }
+
+    .menu-intro-text{
+        width: 40%;
+        height: auto;
+        text-align: left;
+        font-size: 1.2em;
+        padding: 0 0 0 5vw;
+    }
+
+    .menu-intro-extended{
+        display: none;
+    }
+
+    .menu-link-home{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-home-img1{
+        width: 55%;
+        height: 55%;
+        margin: 20% 10% 0 0;
+    }
+    
+    .menu-home-img2{
+        display: none;
+    }
+
+    .menu-home-img3{
+        display: none;
+    }
+
+    /* Map */
+    .location-heading-block{
+        grid-area: 5 / 1 / 6 / 6;
+        justify-content: center;
+        background-color: #518654;
+        width: 100%;
+    }
+
+    .location-heading-home{
+        text-align: center;
+        color: #fff;
+    }
+
+    .map-container-home{
+        grid-area: 6 / 1 / 7 / 6;
+    }
+
+    .map-home{
+        width: 100%;
+        height: 55%;
+        margin-bottom: -1vh;
+        border: 0;
+    }
+    
+    /* Contact Information*/
+    .contact-info-home{
+        width: 100%;
+        height: 70%;
+        background-color: #3F581F;
+        padding: 1vh 0;
+    }
+
+    .contact-heading-home{
+        margin-left: 5vw;
+        color: #fff;
+    }
+
+    .email-phone-home{
+        margin-left: 5vw;
+        color: #fff;
+        padding-bottom: 3vh;
+    }
+
+    .reservation-link-home{
+        text-decoration: none;
+        color: #AF9329;
+    }
+
+    .opening-hours{
+        color: #fdfdfc;
+        font-size: 1em;
+        width: 60%;
+        padding: 0 0 3vh 5vw;
+        margin-bottom: 40vh;
+    }
+
+    .opening-hours h3{
+        margin: 3vh 0 1vh;
+    }
+
+    .opening-hours p{
+        margin-top: 0;
+    }
+
+    .current-hours{
+        float: right;
+    }
+
+    .closed{
+        color: #518654;
+    }
+}
+@media only screen and (min-width: 399px) and (max-width: 575px){
+    body{
+        margin: 0;
+    }
+
+    .main-container-home{
+        display: grid;
+        grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+        grid-template-rows: 0.3fr 1fr 0.4fr 1fr 0.1fr 2.2fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        margin: auto;
+    }
+
+    /* Haukai Intro */
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 110%;
+        transform: scale(2, 2);
+        margin: 0;
+    }
+
+    .welcome-message{
+        width: 80%;
+        font: 1.2em  Questrial, sans-serif;
+        padding: 7vh 0 5vh 0;
+        margin: auto;
+    }
+
+    /* Menu Intro */
+    .menu-intro{
+        grid-area: 4 / 1 / 5 / 6;
+        width: 100%;
+        background-color: #AF9329;
+        display: inline-flex;
+    }
+
+    .menu-intro-heading{
+        color: #080808;
+        padding-left: 5vw;
+    }
+
+    .menu-intro-text{
+        width: 40%;
+        height: auto;
+        text-align: left;
+        font-size: 1.2em;
+        padding: 0 0 0 5vw;
+    }
+        
+    .menu-intro-extended{
+        display: none;
+    }
+
+    .menu-link-home{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-home-img1{
+        width: 55%;
+        height: 50%;
+        margin: 20% 10% 0 0;
+    }
+
+    .menu-home-img2{
+        display: none;
+    }
+
+    .menu-home-img3{
+        display: none;
+    }
+
+    /* Map */
+    .location-heading-block{
+        grid-area: 5 / 1 / 6 / 6;
+        justify-content: center;
+        background-color: #518654;
+        width: 100%;
+    }
+
+    .location-heading-home{
+        text-align: center;
+        color: #fff;
+    }
+
+    .map-container-home{
+        grid-area: 6 / 1 / 7 / 6;
+    }
+
+    .map-home{
+        width: 100%;
+        height: 60%;
+        margin-bottom: -1vh;
+        border: 0;
+    }
+    
+    /* Contact Information*/
+    .contact-info-home{
+        width: 100%;
+        height: 40%;
+        background-color: #3F581F;
+        padding: 1vh 0;
+        display: inline-flex;
+    }
+
+    .contact-heading-home{
+        margin-left: 2vw;
+        color: #fff;
+    }
+
+    .email-phone-home{
+        margin-left: 2vw;
+        color: #fff;
+        padding-bottom: 3vh;
+        width: 35%;
+    }
+
+    .reservation-link-home{
+        text-decoration: none;
+        color: #AF9329;
+    }
+
+    .opening-hours{
+        color: #fdfdfc;
+        font-size: 1em;
+        width: 65%;
+        padding-right: 2vw;
+    }
+
+    .opening-hours h3{
+        margin: 3vh 0 1vh;
+    }
+
+    .opening-hours p{
+        margin-top: 0;
+    }
+
+    .current-hours{
+        float: right;
+    }
+
+    .closed{
+        color: #518654;
+    }
+}
+@media only screen and (min-width: 575px) and (max-width: 768px){
+    body{
+        margin: 0;
+    }
+
+    .main-container-home{
+        display: grid;
+        grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+        grid-template-rows: 0.2fr 1fr 0.4fr 0.2fr 0.1fr 2.5fr 0.2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        margin: auto;
+    }
+
+    /* Haukai Intro */
+    .banner-img{
+        width: 110%;
+        height: 110%;
+        object-fit: cover;
+        object-position: 100%;
+        transform: scale(1, 1);
+    }
+
+    .welcome-message{
+        width: 80%;
+        font: 1.2em  Questrial, sans-serif;
+        padding: 7vh 0 5vh 0;
+        margin: auto;
+    }
+
+    /* Menu Intro */
+    .menu-intro{
+        grid-area: 4 / 1 / 5 / 6;
+        width: 100%;
+        background-color: #AF9329;
+        display: inline-flex;
+    }
+
+    .menu-intro-heading{
+        color: #080808;
+        padding-left: 5vw;
+    }
+
+    .menu-intro-text{
+        width: 40%;
+        height: auto;
+        text-align: left;
+        font-size: 1.2em;
+        padding: 0 0 0 5vw;
+    }
+
+    .menu-intro-extended{
+        display: none;
+    }
+
+    .menu-link-home{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-home-img1{
+        width: 60%;
+        height: 80%;
+        margin: 4% 10% 0 0;
+    }
+    
+    .menu-home-img2{
+        display: none;
+    }
+
+    .menu-home-img3{
+        display: none;
+    }
+
+    /* Map */
+    .location-heading-block{
+        grid-area: 5 / 1 / 6 / 6;
+        justify-content: center;
+        background-color: #518654;
+        width: 100%;
+    }
+
+    .location-heading-home{
+        text-align: center;
+        color: #fff;
+    }
+
+    .map-container-home{
+        grid-area: 6 / 1 / 7 / 6;
+    }
+
+    .map-home{
+        width: 100%;
+        height: 65%;
+        margin-bottom: -1vh;
+        border: 0;
+    }
+    
+    /* Contact Information*/
+    .contact-info-home{
+        width: 100%;
+        height: 35%;
+        background-color: #3F581F;
+        padding: 1vh 0;
+        display: inline-flex;
+    }
+
+    .contact-heading-home{
+        margin-left: 5vw;
+        color: #fff;
+    }
+
+    .email-phone-home{
+        margin-left: 5vw;
+        color: #fff;
+        padding-bottom: 3vh;
+    }
+
+    .reservation-link-home{
+        text-decoration: none;
+        color: #AF9329;
+    }
+
+    .opening-hours{
+        color: #fdfdfc;
+        font-size: 1em;
+        width: 30%;
+        padding-left: 5%;
+    }
+
+    .opening-hours h3{
+        margin: 3vh 0 1vh;
+    }
+
+    .opening-hours p{
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .current-hours{
+        float: right;
+    }
+
+    .closed{
+        color: #518654;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        margin: 0;
+    }
+
+    .main-container-home{
+        display: grid;
+        grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr 1.5fr 0.1fr 3fr 1.5fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        margin: auto;
+    }
+
+    /* Haukai Intro */
+    .banner-img{
+        width: 110%;
+        height: 110%;
+        object-fit: cover;
+        object-position: 100%;
+        transform: scale(1, 1);
+        margin: 0;
+    }
+
+    .welcome-message{
+        width: 80%;
+        font: 1.2em  Questrial, sans-serif;
+        padding: 7vh 0 5vh 0;
+        margin: auto;
+    }
+
+    /* Menu Intro */
+    .menu-intro{
+        grid-area: 4 / 1 / 5 / 6;
+        width: 100%;
+        background-color: #AF9329;
+        display: inline-flex;
+    }
+
+    .menu-intro-heading{
+        color: #080808;
+        padding-left: 5vw;
+    }
+
+    .menu-intro-text{
+        width: 40%;
+        height: auto;
+        text-align: left;
+        font-size: 1.2em;
+        padding: 0 0 0 5vw;
+    }
+    
+    .menu-intro-extended{
+        display: none;
+    }
+
+    .menu-link-home{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-home-img1{
+        width: 60%;
+        height: 80%;
+        margin: 4% 10% 0 0;
+    }
+    
+    .menu-home-img2{
+        display: none;
+    }
+
+    .menu-home-img3{
+        display: none;
+    }
+
+    /* Map */
+    .location-heading-block{
+        grid-area: 5 / 1 / 6 / 6;
+        justify-content: center;
+        background-color: #518654;
+        width: 100%;
+    }
+
+    .location-heading-home{
+        text-align: center;
+        color: #fff;
+    }
+
+    .map-container-home{
+        grid-area: 6 / 1 / 7 / 6;
+    }
+
+    .map-home{
+        width: 100%;
+        height: 60%;
+        margin-bottom: -1vh;
+        border: 0;
+    }
+    
+    /* Contact Information*/
+    .contact-info-home{
+        width: 100%;
+        height: 40%;
+        font-size: 1.2em;
+        background-color: #3F581F;
+        padding: 1vh 0;
+        display: inline-flex;
+    }
+
+    .contact-heading-home{
+        margin-left: 5vw;
+        color: #fff;
+    }
+
+    .email-phone-home{
+        margin-left: 5vw;
+        color: #fff;
+        padding-bottom: 3vh;
+    }
+
+    .reservation-link-home{
+        text-decoration: none;
+        color: #AF9329;
+    }
+
+    .opening-hours{
+        color: #fdfdfc;
+        font-size: 1em;
+        width: 30%;
+        padding-left: 12%;
+    }
+
+    .opening-hours h3{
+        margin: 3vh 0 1vh;
+    }
+
+    .opening-hours p{
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .current-hours{
+        float: right;
+    }
+
+    .closed{
+        color: #518654;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1400px){
+    body{
+        margin: 0;
+    }
+
+    .main-container-home{
+        display: grid;
+        grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+        grid-template-rows: 0.3fr 0.9fr 0.2fr 0.8fr 0.1fr 1.5fr 0.2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        margin: auto;
+    }
+
+    /* Haukai Intro */
+    .welcome-message{
+        width: 80%;
+        font: 1.5em  Questrial, sans-serif;
+        padding: 7vh 0 5vh 0;
+        margin: auto;
+    }
+
+    .banner-img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Menu Intro */
+    .menu-intro{
+        grid-area: 4 / 1 / 5 / 6;
+        width: 100%;
+        background-color: #AF9329;
+        display: inline-flex;
+    }
+
+    .menu-intro-heading{
+        color: #080808;
+        padding-left: 5vw;
+        font-size: 2em;
+        padding-left: 10vw;
+    }
+
+    .menu-intro-text{
+        width: 35%;
+        height: auto;
+        text-align: left;
+        font-size: 1.4em;
+        padding-left: 10vw;
+    }
+
+    .menu-intro-extended{
+        width: 35%;
+        height: auto;
+        text-align: left;
+        font-size: 1.4em;
+        padding-left: 10vw;
+    }
+
+    .menu-link-home{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-home-img1{
+        width: 38%;
+        height: 30%;
+        padding: 7vh 0 0 0;
+        position: absolute;
+        right: 10vw;
+    }
+
+    .menu-home-img2{
+        width: 30%;
+        height: 30%;
+        padding: 40vh 24vw 5vh 0;
+    }
+
+    .menu-home-img3{
+        width: 15%;
+        height: 30%;
+        padding: 15vh 0 3vh 4vw;
+        position: absolute;
+        left: 30vw;
+    }
+
+    /* Map */
+    .location-heading-block{
+        grid-area: 5 / 1 / 6 / 6;
+        justify-content: center;
+        background-color: #518654;
+        width: 100%;
+    }
+
+    .location-heading-home{
+        text-align: center;
+        color: #fff;
+    }
+
+    .map-container-home{
+        grid-area: 6 / 1 / 7 / 6;
+    }
+
+    .map-home{
+        width: 100%;
+        height: 60%;
+        margin-bottom: -1vh;
+        border: 0;
+    }
+    
+    /* Contact Information*/
+    .contact-info-home{
+        width: 100%;
+        height: 40%;
+        background-color: #3F581F;
+        padding: 1vh 0;
+        display: inline-flex;
+    }
+
+    .contact-heading-home{
+        margin-left: 5vw;
+        color: #fff;
+    }
+
+    .email-phone-home{
+        margin-left: 5vw;
+        color: #fff;
+        padding-bottom: 3vh;
+        font-size: 1.2em;
+    }
+
+    .reservation-link-home{
+        text-decoration: none;
+        color: #AF9329;
+        font-size: 1.1em;
+    }
+    .opening-hours{
+        color: #fdfdfc;
+        font-size: 1em;
+        width: 20%;
+        padding-left: 25%;
+    }
+
+    .opening-hours h3{
+        margin: 3vh 0 1vh;
+    }
+
+    .opening-hours p{
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    .current-hours{
+        float: right;
+    }
+
+    .closed{
+        color: #518654;
+    }
+}
+@media only screen and (min-width: 1400px){
+    body{
+        margin: 0;
+    }
+
+    .main-container-home{
+        display: grid;
+        grid-template-columns: 0.2fr repeat(3, 1fr) 0.2fr;
+        grid-template-rows: 0.2fr 0.9fr 0.2fr 0.4fr 0.1fr 1.5fr 0.2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+
+    /* Haukai Intro */
+    .welcome-message{
+        width: 80%;
+        font: 1.5em  Questrial, sans-serif;
+        padding: 7vh 0 5vh 0;
+        margin: auto;
+    }
+
+    .banner-img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Menu Intro */
+    .menu-intro{
+        grid-area: 4 / 1 / 5 / 6;
+        width: 100%;
+        background-color: #AF9329;
+        display: inline-flex;
+    }
+
+    .menu-intro-heading{
+        color: #080808;
+        padding-left: 5vw;
+        font-size: 2em;
+        padding: 10vh 0 0 10vw;
+    }
+
+    .menu-intro-text{
+        width: 35%;
+        height: auto;
+        text-align: left;
+        font-size: 1.4em;
+        padding-left: 10vw;
+    }
+
+    .menu-intro-extended{
+        width: 35%;
+        height: auto;
+        text-align: left;
+        font-size: 1.4em;
+        padding-left: 10vw;
+    }
+
+    .menu-link-home{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-home-img1{
+        width: 30%;
+        height: 40%;
+        padding: 7vh 3.5vw 0 2vw;
+        position: absolute;
+        right: 8vw;
+    }
+
+    .menu-home-img2{
+        width: 30%;
+        height: 30%;
+        padding: 50vh 20.7vw 0 0;
+    }
+
+    .menu-home-img3{
+        width: 15%;
+        height: 40%;
+        padding: 29vh 0 1vh 11.5vw;
+        position: absolute;
+        left: 30vw;
+    }
+
+    /* Map */
+    .location-heading-block{
+        grid-area: 5 / 1 / 6 / 6;
+        justify-content: center;
+        background-color: #518654;
+        width: 100%;
+    }
+
+    .location-heading-home{
+        text-align: center;
+        color: #fff;
+    }
+
+    .map-container-home{
+        grid-area: 6 / 1 / 7 / 6;
+    }
+
+    .map-home{
+        width: 100%;
+        height: 70%;
+        margin-bottom: -1vh;
+        border: 0;
+    }
+    
+    /* Contact Information*/
+    .contact-info-home{
+        width: 100%;
+        height: 30%;
+        background-color: #3F581F;
+        padding: 1vh 0;
+        display: inline-flex;
+    }
+
+    .contact-heading-home{
+        margin-left: 5vw;
+        color: #fff;
+    }
+
+    .email-phone-home{
+        margin-left: 5vw;
+        color: #fff;
+        padding-bottom: 3vh;
+        font-size: 1.2em;
+    }
+
+    .reservation-link-home{
+        text-decoration: none;
+        color: #AF9329;
+        font-size: 1.1em;
+    }
+    
+    .opening-hours{
+        color: #fdfdfc;
+        font-size: 1em;
+        padding-left: 35%;
+        width: 20%;
+    }
+
+    .opening-hours h3{
+        margin: 3vh 0 1vh;
+    }
+
+    .opening-hours p{
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    .current-hours{
+        float: right;
+    }
+
+    .closed{
+        color: #518654;
+    }
+}
+
+/*About Us page layout */
+@media only screen and (max-width: 992px){
+    .main-container-about-us{
+        display: grid;
+        grid-template-columns: 0.6fr repeat(3, 1fr) 0.6fr;
+        grid-template-rows: 0.4fr repeat(2, 1.5fr) 0.2fr repeat(2, 0.3fr) 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+
+    .about-us-content-container{
+        background-color: #3F581F;
+        grid-area: 2 / 1 / 7 / 6;
+        text-align: center;
+        color: #fff;
+    }
+
+    .about-page-link{
+        color: #AF9329;
+        text-decoration: none;
+    }
+
+    .about-us-info{
+        grid-area: 2 / 2 / 4 / 5;
+        padding: 10%;
+    }
+
+    .video-container{
+        grid-area: 4 / 2 / 5 / 5;
+        width: 90%;
+    }
+
+    .karakia-container{
+        grid-area: 5 / 2 / 7 / 5;
+        padding: 5%;
+    }
+
+    .panel-about-img1,
+    .panel-about-img2{
+        display: none;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1400px){
+    .main-container-about-us{
+        display: grid;
+        grid-template-columns: 0.6fr repeat(3, 1fr) 0.6fr;
+        grid-template-rows: 0.4fr repeat(4, 0.5fr) 0.7fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+
+    .about-us-content-container{
+        background-color: #3F581F;
+        grid-area: 2 / 2 / 7 / 5;
+        text-align: center;
+        color: #fff;
+    }
+
+    .about-page-link{
+        color: #AF9329;
+        text-decoration: none;
+    }
+
+    .about-us-info{
+        grid-area: 2 / 2 / 4 / 5;
+        padding: 10%;
+    }
+
+    .video-container{
+        grid-area: 4 / 2 / 5 / 5;
+        width: 90%;
+        margin: 0 5%;
+        border: #AF9329 solid 0.1em;
+    }
+
+    .karakia-container{
+        grid-area: 5 / 2 / 7 / 5;
+        padding: 5%;
+    }
+    .panel-about-img1{
+        grid-area: 2 / 1 / 7 / 2;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 15%;
+    }
+
+    .panel-about-img2{
+        grid-area: 2 / 5 / 7 / 6;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 15%;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .main-container-about-us{
+        display: grid;
+        grid-template-columns: 0.4fr repeat(3, 1fr) 0.4fr;
+        grid-template-rows: 0.4fr repeat(4, 0.5fr) 0.7fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+
+    .about-us-content-container{
+        background-color: #3F581F;
+        grid-area: 2 / 2 / 7 / 5;
+        text-align: center;
+        color: #fff;
+    }
+
+    .about-page-link{
+        color: #AF9329;
+        text-decoration: none;
+    }
+
+    .about-us-info{
+        grid-area: 2 / 2 / 5 / 4;
+        width: 45%;
+        float: left;
+        padding: 10% 0 0 5%;
+        margin-right: 0;
+    }
+
+    .video-container{
+        grid-area: 3 / 4 / 6 / 5;
+        width: 35%;
+        margin: 20% 5% 0 0;
+        border: #AF9329 solid 0.2em;
+        float: right;
+        clear: none;
+    }
+
+    .karakia-container{
+        grid-area: 5 / 2 / 7 / 4;
+        width: 45%;
+        padding: 0 0 10% 5%;
+        float: left;
+        clear: left;
+    }
+    .panel-about-img1{
+        grid-area: 2 / 1 / 7 / 2;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 15%;
+    }
+
+    .panel-about-img2{
+        grid-area: 2 / 5 / 7 / 6;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 15%;
+    }
+}
+
+/* Contact page layout */
+@media only screen and (max-width: 399px){
+    .main-container-information{
+        display: grid;
+        grid-template-columns: 0.6fr repeat(3, 1fr) 0.6fr;
+        grid-template-rows: 0.4fr repeat(4, 0.5fr) 0.7fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+
+    .contact-information-container{
+        grid-area: 2 / 1 / 5 / 6;
+        background-color: #3F581F;
+    }
+
+    .contact-map-container{
+        grid-area: 5 / 1 / 7 / 6;
+        width: 100%;
+    }
+
+    .contact-map{
+        border: 0;
+        width: 100%;
+        height: 100%;
+    } 
+
+    .contact-information{
+        width: 80%;
+        height: 60%;
+        color: #fff;
+        padding: 10%;
+    }
+
+    .contact-panel1{
+        display: none;
+    }
+
+    .contact-panel2{
+        display: none;
+    }
+
+    .opening-days-contact{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 399px) and (max-width: 576px){
+    .main-container-information{
+        display: grid;
+        grid-template-columns: 0.6fr repeat(3, 1fr) 0.6fr;
+        grid-template-rows: 0.3fr repeat(4, 0.35fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+
+    .contact-information-container{
+        grid-area: 2 / 1 / 5 / 6;
+        background-color: #3F581F;
+    }
+
+    .contact-information{
+        width: 80%;
+        height: 80%;
+        color: #fff;
+        padding: 10%;
+    }
+
+    .contact-map-container{
+        grid-area: 5 / 1 / 7 / 6;
+        width: 100%;
+    }
+    
+    .contact-map{
+        border: 0;
+        width: 100%;
+        height: 100%;
+    } 
+
+    .contact-panel1{
+        display: none;
+    }
+
+    .contact-panel2{
+        display: none;
+    }
+
+    .opening-days-contact{
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px){
+    .main-container-information{
+        display: grid;
+        grid-template-columns: 0.6fr repeat(3, 1fr) 0.6fr;
+        grid-template-rows: 0.3fr repeat(4, 0.35fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+
+    .contact-information-container{
+        grid-area: 2 / 1 / 5 / 6;
+        background-color: #3F581F;
+    }
+
+    .contact-information{
+        width: 80%;
+        height: 80%;
+        color: #fff;
+        padding: 10%;
+    }
+
+    .contact-map-container{
+        grid-area: 5 / 1 / 7 / 6;
+        width: 100%;
+    }
+    
+    .contact-map{
+        border: 0;
+        width: 100%;
+        height: 100%;
+    } 
+
+    .contact-panel1{
+        display: none;
+    }
+
+    .contact-panel2{
+        display: none;
+    }
+
+    .opening-days-contact{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .main-container-information{
+        display: grid;
+        grid-template-columns: 0.6fr repeat(3, 1fr) 0.6fr;
+        grid-template-rows: 0.3fr repeat(4, 0.4fr) 0.5fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+
+    .contact-information-container{
+        grid-area: 2 / 2 / 5 / 5;
+        background-color: #3F581F;
+    }
+
+    .contact-information{
+        width: 80%;
+        height: 80%;
+        color: #fff;
+        padding: 5vh 10vw 10vh;
+        font-size: 1.2em;
+    }
+
+    .contact-map-container{
+        grid-area: 5 / 2 / 7 / 5;
+    }
+
+    .contact-map{
+        border: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-panel1{
+        grid-area: 2 / 1 / 7 / 2;
+        opacity: 30%;
+    }
+
+    .contact-panel2{
+        grid-area: 2 / 5 / 7 / 6;
+        opacity: 30%;
+    }
+
+    .panel-img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .opening-days-contact{
+        width: 40%;
+    }
+}
+
+/* Gallery page layout */
+.main-container-gallery{
+    display: grid;
+    grid-template-columns: 0.6fr repeat(3, 3fr) 0.6fr;
+    grid-template-rows: 0.1fr repeat(5, 0.3fr) 0.1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0;
+    background-color: #AF9329;
+}
+.carousel-container{
+    grid-area: 3 / 2 / 6 / 5;
+}
+
+.new-slide{
+    display: none;
+}
+
+.carousel-arrows{
+    display: inline-flex;
+}
+
+.left-arrow{
+    background: none!important;
+    border: none!important;
+    padding: 0!important;
+    margin: 5vh 27vw;
+}
+
+.right-arrow{
+    transform: scaleX(-1);
+    background: none!important;
+    border: none!important;
+    padding: 0!important;
+}
+@media only screen and (max-width: 1400px){
+    .carousel-img{
+        width: 100%;
+        height: 150%;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .carousel-img{
+        width: 60%;
+        height: 60%;
+        padding: 0 20%;
+    }
+    
+    .carousel-arrows{
+        display: inline-flex;
+    }
+
+    .left-arrow{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        margin: 5vh 28.5vw;
+    }
+
+    .right-arrow{
+        transform: scaleX(-1);
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+    }
+}
+
+/* Hours page layout */
+.main-container-information{
+    margin: 0;
+}
+
+.hours-main{
+    background-color: #518654;
+    grid-area: 2 / 1 / 7 / 6;
+}
+
+.roster{
+    grid-area: 3 / 2 / 6 / 5;
+    height: 80%;
+    width: 80%;
+    padding: 5% 10%;
+}
+
+
+
+/* Menu page layout */
+.main-container-menu{
+    display: grid;
+    grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+    grid-template-rows: 0.1fr 0.4fr repeat(3, 0.9fr) 0.7fr 0.1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0;
+    background-color: #3F581F;
+}
+
+.menu{
+    grid-area: 3 / 2 / 6 / 5;
+    background-color: #fdfdfc;
+    width: 100%;
+    height: 100%;
+}
+
+.food-price{
+    font-size: 0.8em;
+    color: #AF9329;
+}
+
+.wines{
+    display: flex;
+}
+
+.bottle-glass{
+    color: #AF9329;
+    padding: 1.5vh 2vw 0;
+}
+
+.drink-price{
+    float: right;
+    font-size: 1.1em;
+    color: #AF9329;
+    padding-left: 5vw;
+}
+
+.download-menu{
+    width: 100%;
+    text-align: center;
+}
+
+.menu-pdf{
+    text-decoration: none;
+    font: small-caps 400 1.5em sans-serif;
+    color: #AF9329;
+}
+@media only screen and (max-width: 767px){
+    .main-container-menu{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.1fr repeat(3, 2fr) 0.1fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+        background-color: #3F581F;
+    }
+    .menu-heading{
+        text-align: center;
+    }
+
+    .entrees{
+        padding: 2vh 10vw 5vh;
+    }
+
+    .entrees h2{
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .mains h2,
+    .dessert h2,
+    .drinks h2{
+        text-align: center;
+    }
+
+    .mains,
+    .dessert,
+    .drinks{
+        padding: 5vh 10vw;
+    }
+
+    .entree-img,
+    .main-course-img,
+    .dessert-img,
+    .drink-img{
+        width: 60%;
+        padding: 0 20%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+    .main-container-menu{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.1fr repeat(3, 2fr) 0.1fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+        background-color: #3F581F;
+    }
+    .menu-heading{
+        padding: 5vh 7vw 0;
+    }
+
+    .entrees{
+        padding: 2vh 7vw 5vh;
+    }
+
+    .entrees h2{
+        padding-top: 0;
+    }
+
+    .mains,
+    .dessert{
+        padding: 5vh 7vw;
+    }
+
+    .drinks{
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .drinks-heading{
+        padding: 10vh 0 0 7vw;
+        margin: 0;
+        display: inline;
+        width: 100%;
+    }
+
+    .drinks-left-column,
+    .drinks-right-column{
+        padding: 0 8vw 10vh 7vw;
+    }
+    
+    .entree-img,
+    .main-course-img,
+    .dessert-img,
+    .drink-img{
+        float: right;
+        width: 30%;
+        padding: 3vh 2vw 3vh 12vw;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .main-container-menu{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.1fr repeat(3, 2fr) 0.1fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+        background-color: #3F581F;
+    }
+    .menu-heading{
+        padding: 5vh 7vw 0;
+    }
+
+    .entrees{
+        padding: 2vh 7vw 5vh;
+    }
+
+    .entrees h2{
+        padding-top: 0;
+    }
+
+    .mains,
+    .dessert{
+        padding: 5vh 7vw;
+    }
+
+    .drinks{
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .drinks-heading{
+        padding: 10vh 0 0 7vw;
+        margin: 0;
+        display: inline;
+        width: 100%;
+    }
+
+    .drinks-left-column,
+    .drinks-right-column{
+        padding: 0 0 10vh 7vw;
+    }
+
+    .entree-img,
+    .main-course-img,
+    .dessert-img,
+    .drink-img{
+        float: right;
+        width: 40%;
+        padding: 3vh 2vw 3vh 12vw;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .main-container-menu{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 0.5fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.1fr repeat(3, 2fr) 0.1fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+        background-color: #3F581F;
+    }
+
+    .menu{
+        grid-area: 3 / 2 / 6 / 5;
+        background-color: #fdfdfc;
+        width: 80%;
+        height: 100%;
+        margin: 0 10%;
+    }
+
+    .menu-heading{
+        padding: 5vh 7vw 0;
+    }
+
+    .entrees{
+        padding: 2vh 7vw 5vh;
+    }
+
+    .entrees h2{
+        padding-top: 0;
+    }
+
+    .mains,
+    .dessert{
+        padding: 5vh 7vw;
+    }
+
+    .drinks{
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .drinks-heading{
+        padding: 10vh 0 0 7vw;
+        margin: 0;
+        display: inline;
+        width: 100%;
+    }
+
+    .drinks-left-column,
+    .drinks-right-column{
+        padding: 0 0 10vh 7vw;
+    }
+
+    .entree-img,
+    .main-course-img,
+    .dessert-img,
+    .drink-img{
+        float: right;
+        width: 40%;
+        padding: 3vh 2vw 3vh 10vw;
+    }
+}
+
+/* Reservation page layout */
+.reservation-main{
+    grid-area: 2 / 1 / 7 / 6;
+    background-color: #AF9329;
+}
+
+.form{
+    grid-area: 3 / 2 / 6 / 5;
+    width: 80%;
+    height: 100%;
+    padding: 5% 10%;
+    border: none;
+}
+@media only screen and (max-width: 399px){
+    .main-container-reservation{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr repeat(3, 2.2fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 399px) and (max-width: 576px){
+    .main-container-reservation{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr repeat(3, 1.9fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .main-container-reservation{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr repeat(3, 1.8fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .main-container-reservation{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr repeat(3, 1.3fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .main-container-reservation{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr repeat(3, 1.7fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .main-container-reservation{
+        display: grid;
+        grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr 0.4fr repeat(3, 1.8fr) 0.7fr 0.1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0;
+    }
+}
+
+/* header and footer */
+@media only screen and (max-width: 399px){
+    /* Header */
+    header{
+        grid-area: 1 / 1 / 2 / 6;
+        background-color: #080808;
+        opacity: 90%;
+        width: 100%;
+    }
+
+    nav{
+        display: inline-flex;
+        margin: 0 3vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-logo-mobile{
+        width: 6em;
+        height: auto;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobile-icons{
+        display: inline-flex;
+    }
+
+    .hamburger-menu{
+        width: 3em;
+        height: 3em;
+        float: right;
+        position: absolute;
+        top: 4vh;
+        right: 22vw;
+    }
+    #hamburger-btn{
+        background: none!important;
+        border: none!important;
+        width: 3em;
+        height: 3em;
+        float: right;
+    }
+    .mobile-menu{
+        display: none;
+        background-color: #080808;
+        width: 50%;
+        float: right;
+        text-align: center;
+        justify-content: center;
+        padding: 10% 0 20%;
+    }
+    a.mobile-nav-link{
+        text-decoration: none;
+        color: #fff;
+        font: 1.2em Questrial, sans-serif;
+        line-height: 5vh;
+    }
+    .mobile-login{
+        width: 3em;
+        float: right;
+        position: absolute;
+        top: 4vh;
+        right: 5vw;
+    }
+
+    /* Footer */
+    footer{
+        grid-area: 7 / 1 / 8 / 6;
+        background-color: #080808;
+        border-bottom: 1vh solid #AF9329;
+    }
+
+    .footer-left-container{
+        display: block;
+        margin: auto;
+    }
+
+    .footer-upper-container{
+        display: flex;
+    }
+
+    .footer-logo{
+        width: 60%;
+        padding-left: 5vw;
+    }
+
+    .social-button-container{
+        display: inline-block;
+        padding-left: 5vw;
+    }
+
+    .social-button{
+        width: 30%;
+    }
+
+    .sitemap-heading{
+        color: #AF9329;
+        margin: 2vh 0 0 11vw;
+    }
+
+    .sitemap a{
+        font: 1em Questrial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        margin-right: 10vw;
+    }
+
+    .legal-modals{
+        display: inline-flex;
+    }
+
+    .modal{
+        display: none;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+        width: 90%;
+        height: 100%;
+        overflow: scroll;
+        background-color: #fff;
+        border-radius: 2%;
+        opacity: 95%;
+    }
+
+    #terms-and-conditions-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 7vw;
+    }
+
+    #privacy-policy-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 15vw;
+    }
+
+    .terms-and-conditions,
+    .privacy-policy{
+        color: #080808;
+        margin: 5vh 5vw;
+        padding: 2vw;
+        width: 80%;
+    }
+
+    .terms-and-conditions h3,
+    .privacy-policy h3{
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    #exit-terms-modal,
+    #exit-privacy-modal{
+        float: right;
+        color: #080808;
+        font-size: 2em;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 1vh 5vw 2vh 0;
+    }    
+}
+@media only screen and (min-width: 399px) and (max-width: 575px){
+    /* Header */
+    header{
+        grid-area: 1 / 1 / 2 / 6;
+        background-color: #080808;
+        opacity: 90%;
+        width: 100%;
+    }
+
+    nav{
+        display: inline-flex;
+        margin: 0 3vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-logo-mobile{
+        width: 6em;
+        height: auto;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobile-icons{
+        display: inline-flex;
+    }
+
+    .hamburger-menu{
+        width: 3em;
+        height: 3em;
+        float: right;
+        position: absolute;
+        top: 4vh;
+        right: 22vw;
+    }
+    #hamburger-btn{
+        background: none!important;
+        border: none!important;
+        width: 3em;
+        height: 3em;
+        float: right;
+    }
+    .mobile-menu{
+        display: none;
+        background-color: #080808;
+        float: right;
+        text-align: center;
+        justify-content: center;
+        margin: 40% 0 20%;
+    }
+    a.mobile-nav-link{
+        text-decoration: none;
+        color: #fff;
+        font: 1.2em Questrial, sans-serif;
+        line-height: 5vh;
+    }
+    .mobile-login{
+        width: 3em;
+        float: right;
+        position: absolute;
+        top: 4vh;
+        right: 7vw;
+    }
+
+    /* Footer */
+    footer{
+        grid-area: 7 / 1 / 8 / 6;
+        background-color: #080808;
+        border-bottom: 1vh solid #AF9329;
+    }
+
+    .footer-left-container{
+        display: block;
+        margin: auto;
+    }
+
+    .footer-upper-container{
+        display: flex;
+    }
+
+    .footer-logo{
+        width: 30%;
+        padding-left: 5vw;
+    }
+
+    .social-button-container{
+        display: inline-block;
+        padding-left: 5vw;
+    }
+
+    .social-button{
+        width: 15%;
+        padding: 3vh 0;
+    }
+
+    .sitemap{
+        text-align: left;
+    }
+
+    .sitemap-heading{
+        color: #AF9329;
+    }
+
+    .sitemap a{
+        font: 1em Questrial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .sitemap-links{
+        padding: 0 10vw 0 0;
+    }
+
+    .legal-modals{
+        display: inline-flex;
+    }
+
+    .modal{
+        display: none;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+        width: 90%;
+        height: 100%;
+        overflow: scroll;
+        background-color: #fff;
+        border-radius: 2%;
+        opacity: 95%;
+    }
+
+    #terms-and-conditions-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 7vw;
+    }
+
+    #privacy-policy-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 30vw;
+    }
+
+    .terms-and-conditions,
+    .privacy-policy{
+        color: #080808;
+        margin: 5vh 5vw;
+        padding: 2vw;
+        width: 80%;
+    }
+
+    .terms-and-conditions h3,
+    .privacy-policy h3{
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    #exit-terms-modal,
+    #exit-privacy-modal{
+        float: right;
+        color: #080808;
+        font-size: 2em;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 1vh 5vw 2vh 0;
+    }
+}
+@media only screen and (min-width: 575px) and (max-width: 768px){
+    /* Header */
+    header{
+        grid-area: 1 / 1 / 2 / 6;
+        background-color: #080808;
+        opacity: 90%;
+        width: 100%;
+    }
+
+    nav{
+        display: inline-flex;
+        margin: 0 3vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mobile-logo-container{
+        width: 20%;
+    }
+
+    .header-logo-mobile{
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    .mobile-logo-link{
+        width: 100%;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobile-icons{
+        display: inline-flex;
+    }
+
+    .hamburger-menu{
+        width: 3em;
+        height: 3em;
+        float: right;
+        position: absolute;
+        top: 6vh;
+        right: 22vw;
+    }
+    #hamburger-btn{
+        background: none!important;
+        border: none!important;
+        width: 3em;
+        height: 3em;
+        float: right;
+    }
+    .mobile-menu{
+        display: none;
+        background-color: #080808;
+        width: 100%;
+        float: right;
+        text-align: center;
+    }
+    a.mobile-nav-link{
+        text-decoration: none;
+        color: #fff;
+        font: 1.2em Questrial, sans-serif;
+        line-height: 5vh;
+    }
+    .mobile-login{
+        width: 3em;
+        float: right;
+        position: absolute;
+        top: 6vh;
+        right: 7vw;
+    }
+
+    /* Footer */
+    footer{
+        grid-area: 7 / 1 / 8 / 6;
+        background-color: #080808;
+        border-bottom: 1vh solid #AF9329;
+    }
+
+    .footer-left-container{
+        display: block;
+        margin: auto;
+    }
+
+    .footer-upper-container{
+        display: flex;
+    }
+
+    .footer-logo{
+        width: 25%;
+        padding-left: 5vw;
+    }
+
+    .social-button-container{
+        display: inline-block;
+        padding-left: 5vw;
+    }
+
+    .social-button{
+        padding-top: 3vh;
+        width: 8%;
+    }
+
+    .sitemap-heading{
+        color: #AF9329;
+        text-align: left;
+    }
+
+    .sitemap a{
+        font: 1em Questrial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        margin-right: 10vw;
+    }
+
+    .sitemap-links{
+        padding: 0;
+    }
+
+    .legal-modals{
+        display: inline-flex;
+    }
+
+    .modal{
+        display: none;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+        width: 90%;
+        height: 100%;
+        overflow: scroll;
+        background-color: #fff;
+        border-radius: 2%;
+        opacity: 95%;
+    }
+
+    #terms-and-conditions-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 15vw;
+        font-size: 1em;
+    }
+
+    #privacy-policy-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 35vw;
+        font-size: 1em;
+    }
+
+    .terms-and-conditions,
+    .privacy-policy{
+        color: #080808;
+        margin: 5vh 5vw;
+        padding: 2vw;
+        width: 80%;
+    }
+
+    .terms-and-conditions h3,
+    .privacy-policy h3{
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    #exit-terms-modal,
+    #exit-privacy-modal{
+        float: right;
+        color: #080808;
+        font-size: 2em;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 1vh 5vw 2vh 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    /* Header */
+    header{
+        grid-area: 1 / 1 / 2 / 6;
+        background-color: #080808;
+        opacity: 90%;
+        width: 100%;
+    }
+
+    nav{
+        display: inline-flex;
+        margin: 0 3vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mobile-logo-container{
+        width: 20%;
+    }
+
+    .header-logo-mobile{
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    .mobile-logo-link{
+        width: 100%;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobile-icons{
+        display: inline-flex;
+    }
+
+    .hamburger-menu{
+        width: 3em;
+        height: 3em;
+        float: right;
+        position: absolute;
+        top: 6vh;
+        right: 22vw;
+    }
+    #hamburger-btn{
+        background: none!important;
+        border: none!important;
+        width: 3em;
+        height: 3em;
+        float: right;
+    }
+    .mobile-menu{
+        display: none;
+        background-color: #080808;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+        margin: 10% 40% 5%;
+    }
+    a.mobile-nav-link{
+        text-decoration: none;
+        color: #fff;
+        font: 1.2em Questrial, sans-serif;
+        line-height: 5vh;
+    }
+    .mobile-login{
+        width: 3em;
+        float: right;
+        position: absolute;
+        top: 6vh;
+        right: 7vw;
+    }
+
+    /* Footer */
+    footer{
+        grid-area: 7 / 1 / 8 / 6;
+        background-color: #080808;
+        border-bottom: 1vh solid #AF9329;
+    }
+
+    .footer-left-container{
+        display: block;
+        margin: auto;
+    }
+
+    .footer-upper-container{
+        display: flex;
+    }
+
+    .footer-logo{
+        width: 25%;
+        padding-left: 5vw;
+    }
+
+    .social-button-container{
+        display: inline-block;
+        padding-left: 5vw;
+    }
+
+    .social-button{
+        padding: 0.5vh 0.6vw 10vh;
+        width: 8%;
+    }
+
+    .sitemap-heading{
+        color: #AF9329;
+        text-align: left;
+    }
+
+    .sitemap a{
+        font: 1em Questrial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        margin-right: 10vw;
+    }
+
+    .sitemap-links{
+        padding: 0;
+    }
+
+    .legal-modals{
+        display: inline-flex;
+    }
+
+    .modal{
+        display: none;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+        width: 90%;
+        height: 100%;
+        overflow: scroll;
+        background-color: #fff;
+        border-radius: 2%;
+        opacity: 95%;
+    }
+
+    #terms-and-conditions-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 0 15vw;
+        font-size: 1.1em;
+    }
+
+    #privacy-policy-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 0 35vw;
+        font-size: 1.1em;
+    }
+
+    .terms-and-conditions,
+    .privacy-policy{
+        color: #080808;
+        margin: 5vh 5vw;
+        padding: 2vw;
+        width: 80%;
+    }
+
+    .terms-and-conditions h3,
+    .privacy-policy h3{
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    #exit-terms-modal,
+    #exit-privacy-modal{
+        float: right;
+        color: #080808;
+        font-size: 2em;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 1vh 5vw 2vh 0;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1400px){
+    /* Header */
+    header{
+        grid-area: 1 / 1 / 2 / 6;
+        background-color: #080808;
+        opacity: 90%;
+        width: 100%;
+    }
+
+    .header-logo-container{
+        width: 12%;
+    }
+
+    .header-logo{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 2vh;
+    }
+
+    .logo-link{
+        width: 100%;
+    }
+
+    nav{
+        margin: 0 3vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .desktop-nav{
+        display: inline-flex;
+    }
+
+    .main-nav-link{
+        display: inline-flex;
+    }
+
+    .main-nav-link a{
+        text-decoration: none;
+        font: small-caps 400 1.4em sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 7vh 2vw 0 3vw;
+    }
+
+    .login{
+        width: 3em;
+        float: right;
+        position: absolute;
+        top: 8.5vh;
+        right: 3vw;
+    }
+  
+    .mobile-nav{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+    /* Footer */
+    footer{
+        grid-area: 7 / 1 / 8 / 6;
+        background-color: #080808;
+        border-bottom: 1vh solid #AF9329;
+    }
+
+    .footer-left-container{
+        display: block;
+        margin: auto;
+    }
+
+    .footer-upper-container{
+        display: flex;
+    }
+
+    .footer-logo{
+        width: 12%;
+        padding-left: 5vw;
+    }
+
+    .social-button-container{
+        display: inline-block;
+        padding-left: 5vw;
+    }
+
+    .social-button{
+        width: 6%;
+    }
+
+    .sitemap-heading{
+        color: #AF9329;
+        margin: 2vh 10vw 0 3.5vw;
+    }
+
+    .sitemap a{
+        font: 1.2em Questrial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 0;
+    }
+
+    .legal-modals{
+        display: inline-flex;
+    }
+
+    .modal{
+        display: none;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+        width: 90%;
+        height: 100%;
+        overflow: scroll;
+        background-color: #fff;
+        border-radius: 2%;
+        opacity: 95%;
+    }
+
+    #terms-and-conditions-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 15vw;
+        font-size: 1.2em;
+    }
+
+    #privacy-policy-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 15vw;
+        font-size: 1.2em;
+        position: absolute;
+        right: 20vw;
+    }
+
+    .terms-and-conditions,
+    .privacy-policy{
+        color: #080808;
+        margin: 5vh 5vw;
+        padding: 2vw;
+        width: 80%;
+    }
+
+    .terms-and-conditions h3,
+    .privacy-policy h3{
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    #exit-terms-modal,
+    #exit-privacy-modal{
+        float: right;
+        color: #080808;
+        font-size: 2em;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 1vh 5vw 2vh 0;
+    }
+}
+@media only screen and (min-width: 1400px){
+    /* Header */
+    header{
+        grid-area: 1 / 1 / 2 / 6;
+        background-color: #080808;
+        opacity: 90%;
+        width: 100%;
+    }
+
+    .header-logo-container{
+        width: 10%;
+        margin: 2vh 10vw 0 0;
+    }
+
+    .header-logo{
+        width: 100%;
+        height: auto;
+        display: flex;   
+    }
+
+    .logo-link{
+        width: 100%;
+    }
+
+    nav{
+        margin: 0 3vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .desktop-nav{
+        display: inline-flex;
+    }
+
+    .main-nav-link{
+        display: inline-flex;
+    }
+
+    .main-nav-link a{
+        text-decoration: none;
+        font: small-caps 400 1.4em sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 7vh 2vw 0 2.5vw;
+    }
+
+    .login{
+        width: 3em;
+        float: right;
+        position: absolute;
+        top: 8vh;
+        right: 3vw;
+    }
+  
+    .mobile-nav{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: none;
+    }
+
+    /* Footer */
+    footer{
+        grid-area: 7 / 1 / 8 / 6;
+        background-color: #080808;
+        border-bottom: 1vh solid #AF9329;
+    }
+
+    .footer-left-container{
+        display: block;
+        width: 60%
+    }
+
+    .footer-upper-container{
+        display: flex;
+    }
+
+    .footer-logo{
+        width: 12%;
+        padding-left: 5vw;
+        margin-top: 2vh;
+    }
+
+    .social-button-container{
+        display: inline-block;
+        padding-left: 5vw;
+    }
+
+    .social-button{
+        width: 6%;
+    }
+
+    .sitemap{
+        padding-left: 20vw;
+    }
+
+    .sitemap-heading{
+        color: #AF9329;
+        padding-left: 2.5vw;
+        margin-top: 2vh;
+    }
+
+    .sitemap a{
+        font: 1.2em Questrial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+        padding: 0;
+        margin-right: 5vw;
+    }
+
+    .legal-modals{
+        display: inline-flex;
+    }
+
+    .modal{
+        display: none;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+        width: 90%;
+        height: 100%;
+        overflow: scroll;
+        background-color: #fff;
+        border-radius: 2%;
+        opacity: 95%;
+    }
+
+    #terms-and-conditions-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 15vw;
+        font-size: 1.2em;
+    }
+
+    #privacy-policy-btn{
+        background: none!important;
+        border: none!important;
+        padding: 0!important;
+        cursor: pointer;
+        color: #AF9329;
+        margin: 3vh 0 1vh 15vw;
+        font-size: 1.2em;
+        position: absolute;
+        right: 20vw;
+    }
+
+    .terms-and-conditions,
+    .privacy-policy{
+        color: #080808;
+        margin: 5vh 5vw;
+        padding: 2vw;
+        width: 80%;
+    }
+
+    .terms-and-conditions h3,
+    .privacy-policy h3{
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    #exit-terms-modal,
+    #exit-privacy-modal{
+        float: right;
+        color: #080808;
+        font-size: 2em;
+        font-weight: 800;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 1vh 5vw 2vh 0;
+    }
+}
