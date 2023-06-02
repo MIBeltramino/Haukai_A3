@@ -1,4 +1,4 @@
 AuthType Basic 
 AuthName "My Protected Folder" 
-AuthUserFile Protected/.htpasswd
+AuthUserFile ../Protected/.htpasswd
 Require valid-user
